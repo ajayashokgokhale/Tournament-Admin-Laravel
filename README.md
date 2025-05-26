@@ -300,6 +300,23 @@ mkdir public/franchiseslogo
 chmod -R 775 public/franchiseslogo
 
 
+## Screenshots
+
+### Dashboard
+![Tournament Admin Dashboard](screenshots/Tournment_admin_dashboard.png)
+
+### Events (Tournament)
+![Tournament Admin Events (Tournament)](screenshots/Tournment_admin_events.png)
+
+### Franchises (Teams)
+![Tournament Admin Franchises (Teams)](screenshots/Tournment_admin_frenchises.png)
+
+### Players
+![Tournament Admin Players](screenshots/Tournment_admin_players.png)
+
+### Contests (Matches)
+![Tournament Admin Contests (Matches)](screenshots/Tournment_admin_contests.png)
+
 ---
 
 **Tournament Admin** empowers organizers to manage any tournament or event with ease, providing a scalable and user-friendly platform for teams, players, and matches. Start managing your tournament today!
