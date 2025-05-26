@@ -159,51 +159,115 @@ The project features a clean, responsive UI powered by Bootstrap 5 and jQuery, w
     - The `/admin` dashboard shows total franchises, event counts, and recent contests.
 
 ## Project Structure
+/app folder
 ```
-tournament-admin/
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   │   ├── Admin/
-│   │   │   │   ├── AdminController.php
-│   │   │   │   ├── FranchisesController.php
-│   │   │   │   ├── PlayersController.php
-│   │   │   │   ├── EventsController.php
-│   │   │   │   ├── ContestsController.php
-│   ├── Models/
-│   │   ├── Admin/
-│   │   │   ├── Franchise.php
-│   │   │   ├── Player.php
-│   │   │   ├── Event.php
-│   │   │   ├── Contest.php
-│   ├── Services/
-│   │   ├── FranchisesService.php
-│   │   ├── ContestsService.php
-├── database/
-│   ├── migrations/
-│   │   ├── *_create_franchises_table.php
-│   │   ├── *_create_players_table.php
-│   │   ├── *_create_events_table.php
-│   │   ├── *_create_contests_table.php
-├── resources/
-│   ├── views/
-│   │   ├── admin/
-│   │   │   ├── home.blade.php
-│   │   │   ├── franchises/
-│   │   │   │   ├── home.blade.php
-│   │   │   ├── players/
-│   │   │   │   ├── home.blade.php
-│   │   │   ├── events/
-│   │   │   │   ├── home.blade.php
-│   │   │   ├── contests/
-│   │   │   │   ├── home.blade.php
-│   │   │   ├── left-nav.blade.php
-│   │   │   ├── top-header.blade.php
-├── routes/
-│   ├── web.php
-├── public/
-│   ├── storage/ (linked for file uploads)
+app/
+├── Http
+│   ├── Controllers
+│   │   ├── Admin
+│   │   │   ├── BasketballAdmin.php
+│   │   │   ├── ContestsController.php
+│   │   │   ├── EventsController.php
+│   │   │   ├── FranchisesController.php
+│   │   │   └── PlayersController.php
+│   │   ├── Auth
+│   │   │   ├── AuthenticatedSessionController.php
+│   │   │   ├── ConfirmablePasswordController.php
+│   │   │   ├── EmailVerificationNotificationController.php
+│   │   │   ├── EmailVerificationPromptController.php
+│   │   │   ├── NewPasswordController.php
+│   │   │   ├── PasswordController.php
+│   │   │   ├── PasswordResetLinkController.php
+│   │   │   ├── RegisteredUserController.php
+│   │   │   └── VerifyEmailController.php
+│   │   ├── Controller.php
+│   │   └── ProfileController.php
+│   └── Requests
+│       ├── Auth
+│       │   └── LoginRequest.php
+│       └── ProfileUpdateRequest.php
+├── Models
+│   ├── Admin
+│   │   ├── BasketballAdmin.php
+│   │   ├── Contest.php
+│   │   ├── Event.php
+│   │   ├── Franchise.php
+│   │   └── Player.php
+│   └── User.php
+├── Providers
+│   └── AppServiceProvider.php
+├── Services
+│   ├── ContestsService.php
+│   ├── EventsService.php
+│   ├── FranchisesService.php
+│   └── PlayersService.php
+└── View
+    └── Components
+        ├── AppLayout.php
+        └── GuestLayout.php
+
 ```
+/resources folder
+
+```
+
+resources/
+├── css
+│   └── app.css
+├── js
+│   ├── app.js
+│   └── bootstrap.js
+└── views
+├── admin
+│   ├── basketballadmin.blade.php
+│   ├── contests
+│   │   └── home.blade.php
+│   ├── events
+│   │   └── home.blade.php
+│   ├── franchises
+│   │   └── franchises_home.blade.php
+│   ├── home.blade.php
+│   ├── left-nav.blade.php
+│   ├── players
+│   │   └── home.blade.php
+│   └── top-header.blade.php
+├── auth
+│   ├── confirm-password.blade.php
+│   ├── forgot-password.blade.php
+│   ├── login.blade.php
+│   ├── register.blade.php
+│   ├── reset-password.blade.php
+│   └── verify-email.blade.php
+├── components
+│   ├── application-logo.blade.php
+│   ├── auth-session-status.blade.php
+│   ├── danger-button.blade.php
+│   ├── dropdown.blade.php
+│   ├── dropdown-link.blade.php
+│   ├── input-error.blade.php
+│   ├── input-label.blade.php
+│   ├── modal.blade.php
+│   ├── nav-link.blade.php
+│   ├── primary-button.blade.php
+│   ├── responsive-nav-link.blade.php
+│   ├── secondary-button.blade.php
+│   └── text-input.blade.php
+├── dashboard.blade.php
+├── layouts
+│   ├── app.blade.php
+│   ├── guest.blade.php
+│   └── navigation.blade.php
+├── profile
+│   ├── edit.blade.php
+│   └── partials
+│       ├── delete-user-form.blade.php
+│       ├── update-password-form.blade.php
+│       └── update-profile-information-form.blade.php
+└── welcome.blade.php
+
+```
+
+
 
 ## Contributing
 1. Fork the repository.
