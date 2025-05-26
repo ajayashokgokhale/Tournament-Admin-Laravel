@@ -291,7 +291,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Please check sampledb folder on project root
 
 ## Photos / Images
-Photos / Logos of Franchises, Players, events are stored in public folder. 
+Photos / Logos of Franchises, Players, events are stored in public folder.
 Please create folders like
 eventsphoto, franchiseslogo, playersphoto
 
