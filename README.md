@@ -319,4 +319,6 @@ chmod -R 775 public/franchiseslogo
 
 ---
 
+**Note** This project is based on Laravel 12. If you encounter any missing files or folders, please refer to the official Laravel 12 installation.
+
 **Tournament Admin** empowers organizers to manage any tournament or event with ease, providing a scalable and user-friendly platform for teams, players, and matches. Start managing your tournament today!
